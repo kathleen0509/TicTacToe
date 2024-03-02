@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/purple_200"
     tools:context=".MainActivity">
 
     <RelativeLayout
@@ -16,7 +17,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Player 1: 0"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="16dp"
+            android:layout_alignParentStart="true"/>
 
         <TextView
             android:id="@+id/player2_score"
@@ -24,98 +28,140 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/player1_score"
             android:text="Player 2: 0"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="16dp"
+            android:layout_alignParentStart="true"/>
 
         <Button
             android:id="@+id/btn_reset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Reset"
-            android:layout_marginLeft="300sp"
-            android:layout_marginTop="20sp"
+            android:textColor="@color/black"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_centerVertical="true"
             />
 
     </RelativeLayout>
     
-    <LinearLayout
+    <GridLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
-        
+        android:layout_weight="1"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:alignmentMode="alignMargins"
+        android:padding="16dp"
+        android:background="@color/teal_200"
+        android:columnOrderPreserved="false">
+
         <Button
             android:id="@+id/btn_00"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textSize="60sp"/>
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:textSize="72sp" />
 
         <Button
             android:id="@+id/btn_01"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textSize="60sp"/>
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:textSize="72sp" />
 
         <Button
             android:id="@+id/btn_02"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textSize="60sp"/>
-    </LinearLayout>
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:textSize="72sp" />
+    </GridLayout>
 
-    <LinearLayout
+    <GridLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:alignmentMode="alignMargins"
+        android:padding="16dp"
+        android:background="@color/teal_200"
+        android:columnOrderPreserved="false">
 
         <Button
             android:id="@+id/btn_10"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textSize="60sp"/>
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:textSize="72sp" />
 
         <Button
             android:id="@+id/btn_11"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textSize="60sp"/>
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:textSize="72sp" />
 
         <Button
             android:id="@+id/btn_12"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textSize="60sp"/>
-    </LinearLayout>
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:textSize="72sp" />
+    </GridLayout>
 
-    <LinearLayout
+    <GridLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:alignmentMode="alignMargins"
+        android:padding="16dp"
+        android:background="@color/teal_200"
+        android:columnOrderPreserved="false">
 
         <Button
             android:id="@+id/btn_20"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textSize="60sp"/>
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:textSize="72sp" />
 
         <Button
             android:id="@+id/btn_21"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textSize="60sp"/>
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:textSize="72sp" />
 
         <Button
             android:id="@+id/btn_22"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textSize="60sp"/>
-    </LinearLayout>
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:textSize="72sp" />
+    </GridLayout>
+
 
 </LinearLayout>
